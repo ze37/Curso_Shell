@@ -1,0 +1,17 @@
+ALIASES
+
+É possivel defenir um alias para um comando ou sequencia de comando usados com frequencia.
+
+Ex = alias mo='more'
+alias lshome='cd /home;ls'
+
+Tambem permitir modificar o comportamento padrão de
+um comando.
+
+Ex = alias lsl='ls -l'
+
+Para listar os aliases criados, digite alias sem parametros.
+Por padrão, os aliases são locais ao shell e nao sao 
+repassados a outros progamas.
+progamas 
+Para excluir um alias criado, use unalias nome_alias
