@@ -1,0 +1,38 @@
+ARQUIVOS DE CONFIGURAÇÃO 
+
+Variavel de ambiente, funcões e aliases podem ser configurados
+automaticamente pelo bash com o uso de alguns arquivos de configuração,
+de modo a definie o ambiente operacional ao iniciar o sistema.
+
+Cada arquivo de configuração tem um escopo e momento de uso definidos, e o arquivo
+usado depende do metodo usado para iniciar o bash.
+Há trẽs formas de se iniciar o bash:
+
+- Como um shell de login padrão na inicialização;
+- Como um shell interativo que não é o shell de login;
+- Como um shell não-intarativo para rodar um script.
+
+SHELL DE LOGIN
+
+Quando nos logamos no sistema Linux, o shell
+bash e  iniciado em um shell de login;
+
+Esse shell procura por quatro arquivos de
+inicializção para processar seus comandos, na
+seguinte ordem:
+/etc/profile
+~/.bash_profile
+~/.bash_login
+~/.profile
+
+SHELL INTERATIVO
+
+Quando o bash é iniciado como um shell inerativo, ele
+não processa o arquivo /etc/profile; em vez disso, ele
+tenta executar o .bashrc no diretorio do 
+usuario atual.
+O arquivo .bashrc pode ser usado para que o usuario insira aliases personalisados
+e funcoes de scripts pessoais.
+Tambem executa o arquivo global /etc/bashrc ou /etc/bash_bashrc, o qual
+configurar algumas variaveis
+de ambiente locais
