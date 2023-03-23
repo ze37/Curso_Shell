@@ -1,0 +1,13 @@
+FUNCÕES
+O bash tambem permite trabalhar com funcões, que são parecidas com os aliases - mas em vez de comandos 
+temos pequenos progamas.
+
+Sintaxe:
+
+nome_funcão(){comandos}
+
+Exemplo:
+palavra(){
+>cd /home/zeneto
+>echo 'Linha acrescentada' >> test_func
+>}
